@@ -2,9 +2,9 @@ from __future__ import annotations
 
 import dataclasses
 
-from src.ddd import error
-from src.ddd.error import BoundedContextError
-from src.ddd.model import AbstractEntity, AbstractCommand, AbstractEvent
+from ddd import error
+from ddd.error import BoundedContextError
+from ddd.model import AbstractEntity, AbstractCommand, AbstractEvent
 
 
 @dataclasses.dataclass

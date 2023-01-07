@@ -3,9 +3,9 @@ from __future__ import annotations
 from demo.adapters.clients.pubsub_client import AbstractPubSubClient
 from demo.adapters.repositories.user_repository import AbstractUserRepository, AbstractAsyncUserRepository
 from demo.domain.model import ChangeEmailCommand
-from src.ddd import async_utils
-from src.ddd.handlers import AbstractCommandHandler, TCommand, THandleCommandResult, AbstractAsyncCommandHandler
-from src.ddd.model import AbstractEvent
+from ddd import async_utils
+from ddd.handlers import AbstractCommandHandler, TCommand, THandleCommandResult, AbstractAsyncCommandHandler
+from ddd.model import AbstractEvent
 
 
 class ChangeEmailCommandHandler(AbstractCommandHandler[ChangeEmailCommand, str]):

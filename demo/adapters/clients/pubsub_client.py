@@ -2,8 +2,8 @@ from __future__ import annotations
 
 import abc
 
-from src.ddd import async_utils
-from src.ddd.repository import RollbackCommitter, AsyncRollbackCommitter
+from ddd import async_utils
+from ddd.repository import RollbackCommitter, AsyncRollbackCommitter
 
 
 class AbstractPubSubClient(RollbackCommitter, abc.ABC):

@@ -9,8 +9,8 @@ from demo.service_layer.event_handlers.email_changed_event_handler import EmailC
     AsyncEmailChangedEventHandler
 from demo.service_layer.event_handlers.notify_slack_event_handler import NotifySlackEventHandler, \
     AsyncNotifySlackEventHandler
-from src.ddd.bootstrapper import Bootstrapper
-from src.ddd.handlers import AbstractCommandHandler, AbstractEventHandler, AbstractAsyncEventHandler, \
+from ddd.bootstrapper import Bootstrapper
+from ddd.handlers import AbstractCommandHandler, AbstractEventHandler, AbstractAsyncEventHandler, \
     AbstractAsyncCommandHandler
 
 

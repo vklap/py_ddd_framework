@@ -3,10 +3,10 @@ from __future__ import annotations
 from demo.adapters.clients.pubsub_client import AbstractPubSubClient, AbstractAsyncPubSubClient
 from demo.adapters.repositories.user_repository import AbstractUserRepository
 from demo.domain.model import ChangeEmailCommand, EmailChangedEvent, NotifySlackEvent
-from src.ddd import async_utils
-from src.ddd.handlers import AbstractCommandHandler, TEvent, THandleCommandResult, AbstractEventHandler, \
+from ddd import async_utils
+from ddd.handlers import AbstractCommandHandler, TEvent, THandleCommandResult, AbstractEventHandler, \
     AbstractAsyncEventHandler
-from src.ddd.model import AbstractEvent
+from ddd.model import AbstractEvent
 
 
 class EmailChangedEventHandler(AbstractEventHandler[EmailChangedEvent]):

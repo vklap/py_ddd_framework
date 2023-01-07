@@ -3,8 +3,8 @@ from __future__ import annotations
 import abc
 from typing import TypeVar, Generic, Callable
 
-from src.ddd.model import AbstractCommand, AbstractEvent
-from src.ddd.repository import RollbackCommitter, AsyncRollbackCommitter
+from ddd.model import AbstractCommand, AbstractEvent
+from ddd.repository import RollbackCommitter, AsyncRollbackCommitter
 
 THandleCommandResult = TypeVar('THandleCommandResult')
 TCommand = TypeVar('TCommand', bound=AbstractCommand)

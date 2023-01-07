@@ -5,7 +5,7 @@ import collections
 import threading
 from typing import Callable, Generic, TypeVar, Union
 
-from src.ddd.handlers import AbstractCommandHandler, AbstractEventHandler, CreateCommandHandler, CreateEventHandler, \
+from ddd.handlers import AbstractCommandHandler, AbstractEventHandler, CreateCommandHandler, CreateEventHandler, \
     AbstractAsyncCommandHandler, CreateAsyncCommandHandler, CreateAsyncEventHandler, AbstractAsyncEventHandler
 
 TCreateCommandHandler = TypeVar('TCreateCommandHandler', bound=Union[CreateCommandHandler, CreateAsyncCommandHandler])

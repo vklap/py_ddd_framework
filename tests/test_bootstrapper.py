@@ -2,8 +2,8 @@ import pytest
 
 from demo.domain.model import User, ChangeEmailCommand
 from demo.entrypoints.bootstrapper import DemoBootstrapper
-from src import ddd
-from src.ddd.error import BoundedContextError
+import ddd
+from ddd.error import BoundedContextError
 
 
 class TestBootstrapper:

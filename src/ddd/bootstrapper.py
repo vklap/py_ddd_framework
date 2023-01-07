@@ -4,12 +4,12 @@ import inspect
 from collections.abc import Callable
 from typing import Any, Type
 
-from src.ddd.factories import CommandHandlerFactory, EventHandlersFactory, CreateCommandHandler, CreateEventHandler, \
+from ddd.factories import CommandHandlerFactory, EventHandlersFactory, CreateCommandHandler, CreateEventHandler, \
     AsyncCommandHandlerFactory, AsyncEventHandlersFactory
-from src.ddd.handlers import CreateAsyncCommandHandler, CreateAsyncEventHandler, AbstractCommandHandler, \
+from ddd.handlers import CreateAsyncCommandHandler, CreateAsyncEventHandler, AbstractCommandHandler, \
     AbstractEventHandler, AbstractAsyncCommandHandler, AbstractAsyncEventHandler
-from src.ddd.message_bus import MessageBus, AsyncMessageBus
-from src.ddd.model import AbstractCommand
+from ddd.message_bus import MessageBus, AsyncMessageBus
+from ddd.model import AbstractCommand
 
 
 class Bootstrapper:

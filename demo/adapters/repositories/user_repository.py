@@ -3,8 +3,8 @@ from __future__ import annotations
 import abc
 
 from demo.domain.model import User
-from src.ddd import error
-from src.ddd.repository import RollbackCommitter, AsyncRollbackCommitter
+from ddd import error
+from ddd.repository import RollbackCommitter, AsyncRollbackCommitter
 
 
 class AbstractUserRepository(RollbackCommitter, abc.ABC):

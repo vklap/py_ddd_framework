@@ -3,8 +3,8 @@ import abc
 
 from typing import Any, Generic, Type, TypeVar, Union
 from types import TracebackType
-from src.ddd.model import AbstractCommand, AbstractEvent
-from src.ddd.handlers import (
+from ddd.model import AbstractCommand, AbstractEvent
+from ddd.handlers import (
     AbstractCommandHandler,
     AbstractEventHandler,
     AbstractAsyncCommandHandler,

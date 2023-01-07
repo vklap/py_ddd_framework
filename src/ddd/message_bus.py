@@ -3,10 +3,10 @@ from __future__ import annotations
 from typing import Deque, Any
 import collections
 
-from src.ddd.model import AbstractEvent, AbstractCommand
-from src.ddd.factories import CommandHandlerFactory, EventHandlersFactory, AsyncCommandHandlerFactory, \
+from ddd.model import AbstractEvent, AbstractCommand
+from ddd.factories import CommandHandlerFactory, EventHandlersFactory, AsyncCommandHandlerFactory, \
     AsyncEventHandlersFactory
-from src.ddd.unit_of_work import CommandUnitOfWork, EventUnitOfWork, AsyncCommandUnitOfWork, AsyncEventUnitOfWork
+from ddd.unit_of_work import CommandUnitOfWork, EventUnitOfWork, AsyncCommandUnitOfWork, AsyncEventUnitOfWork
 
 
 class MessageBus:
